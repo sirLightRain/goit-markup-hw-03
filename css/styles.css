@@ -41,6 +41,14 @@ ul, ol {
     padding-left: 0px;
 }
 
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
 .section {
     padding-top: 0px;
     padding-bottom: 120px;
@@ -78,7 +86,7 @@ ul, ol {
 
 /* H2 style */
 .title-second {
-    padding-top: 120px;
+    
     padding-bottom: 72px;
 
     font-size: 36px;
@@ -115,10 +123,12 @@ ul, ol {
 
 /* Footer text */
 .footer-text {
-    
+    /* text-align: left; */
+    padding-top: 16px;
     font-size: 16px;
     line-height: 1.5;
     color: var(--accent-color);
+
 }
 
 /* ====================== main page hero button ====================== */
@@ -170,6 +180,7 @@ ul, ol {
     line-height: 1.33;
     color: var(--dark-color);
     text-transform: uppercase;
+    
 }
 
 .logo-studio-f {
@@ -185,15 +196,24 @@ ul, ol {
 
 /* ====================== BG section Colors ====================== */
 /* Page header style */
-.bg-color-h-f {
+.bg-color-h {
     padding-top: 188px;
     padding-bottom: 188px;
     margin-bottom: 120px;
     background-color: var(--dark-color);
 }
 
+.bg-color-f {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* margin-bottom: 120px; */
+    background-color: var(--dark-color);
+    
+}
+
 /* BG section Our Team */
 .our-team-colors-bg {
+    padding-top: 120px;
     background-color: var(--light-colors);
 }
 
@@ -209,15 +229,15 @@ ul, ol {
 }
 /* ====================== Site Navigation ====================== */
 
-/* .container {
-    width: 1152px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-left: auto;
-    margin-right: auto; 
-} */
+.site-nav .container {
+    /* display: flex; */
+    /* border-bottom: 1px solid #E7E9FC; */
+}
+
 .page-header {
+    
     background-color: var(--light-colors);
+    /* border-bottom: 1px solid #E7E9FC; */
 }
 
 .container {
@@ -226,7 +246,7 @@ ul, ol {
     margin-right: auto;
     padding: 0px 156px;
     width: 1440px;
-
+    
 
 
     background-color: tomato;
@@ -238,18 +258,12 @@ ul, ol {
 .main-nav {
     display: flex;
     align-items: center;
-    /* margin-left: 156px; */
+    /* border-bottom: 1px solid #E7E9FC; */
 }
 
 .site-nav {
     display: flex;
     margin-left: 76px;
-}
-
-.site-nav .item {
-    
-    /* background-color: teal; */
-    
 }
 
 .site-nav .item + .item {
@@ -273,7 +287,9 @@ ul, ol {
 }
 /* ====================== Hero ====================== */
 
-
+/* .hero {
+    width: 1440px;
+} */
 
 /* ====================== Section 2 Переваги ====================== */
 
@@ -301,11 +317,40 @@ ul, ol {
     margin-left: 24px;
 }
 
-/* ====================== Section  Our Team ====================== */
+/* ====================== Section 4 Our Team ====================== */
 
-/* .team-cards .item + .item {
+.team-cards {
+    display: flex;
+}
+
+.team-cards .item + .item {
     margin-left: 24px;
-} */
+}
+
+
+.card-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* ====================== Footer ====================== */
+
+.container-f {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+
+
+
+    background-color: tomato;
+    outline: 1px solid blue;
+}
+
+.logo-footer {
+    padding-bottom: 16px;
+    display: block;
+}
 
 /* ====================== Adress Activation ====================== */
 
@@ -338,8 +383,24 @@ ul, ol {
 }
 /* ====================== Portfolio button menu navigation ====================== */
 
+.container-b {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    width: 1440px;
+
+
+
+    background-color: tomato;
+    outline: 1px solid blue;
+}
+
 .btm {
     display: flex;
+    justify-content: center;
 }
 
 .btm .item + .item {
@@ -364,7 +425,43 @@ ul, ol {
 .button-nav:focus {
     color: var(--hero-text-color);
     background-color: var(--pressed-state-color);
-    border: none;
+    border: 1px solid transparent;
 }
 
+/* ====================== Portfolio cards net ====================== */
 
+.container-net {
+    
+    flex-wrap: wrap;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -48px;
+    /* margin-top: -48px; */
+    padding: 0px 156px;
+    width: 1440px;
+    
+
+
+    background-color: tomato;
+    outline: 1px solid blue;
+}
+
+.container-net > .item {
+    outline: 1px solid teal;
+
+    flex-basis: calc(100%/3 - 24px);
+
+    
+    margin-top: 48px;
+    
+}
+
+.container-net .item:nth-child(3n+1) {
+    margin-left: 24px;
+}
+
+/* .container-net .item + .item {
+    margin-left: 24px;
+} */
