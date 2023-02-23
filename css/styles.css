@@ -1,0 +1,187 @@
+/* ====================== Stule Guide (colors) ====================== */
+
+/* ====================== Оголошуємо змінні CSS ====================== */
+:root {
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --hero-text-color: #ffffff;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-colors: #F4F4FD;
+    
+}
+
+/* ====================== Body global stylea ====================== */
+body {
+    font-family: 'roboto', sans-serif;
+    color: var(--dark-color);
+}
+
+/* ====================== Text Guide ====================== */
+
+/* Global main paramrters for text */
+.main-text-style {
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
+
+/* H1 style */
+.title-first {
+    font-size: 56px;
+    line-height: 1.15;    
+    color: var(--hero-text-color);
+}
+
+/* H2 style */
+.title-second {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;   
+}
+
+/* H3 style */
+.title-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* Body text style */
+.small-text {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Body text style */
+.medium-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+/* Footer text */
+.footer-text {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent-color);
+}
+
+/* ====================== main page hero button ====================== */
+
+/* Button text style */
+.button-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--primary-brand-color);
+}
+
+/* Hero-button text style */
+.hero-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--hero-text-color);
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+}
+/* ====================== logo ====================== */
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--primary-brand-color); 
+    text-transform: uppercase;
+}
+
+.logo-studio-h {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+.logo-studio-f {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--light-colors);
+    text-transform: uppercase;
+}
+
+
+/* ====================== BG section Colors ====================== */
+/* Page header style */
+.bg-color-h-f {
+    background-color: var(--dark-color);
+}
+
+/* BG section Our Team */
+.our-team-colors-bg {
+    background-color: var(--light-colors);
+}
+
+
+/* ====================== Link ====================== */
+/* Link style */
+.link {
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+/* ====================== Site Navigation ====================== */
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--dark-color);
+}
+
+/* A highlighted link to the active page */
+.site-nav .carrent {
+    color: green;
+}
+
+/* ====================== Adress Activation ====================== */
+
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--primary-brand-color);
+}
+
+/* ====================== Portfolio button menu navigation ====================== */
+
+.button-nav {
+    color: var(--primary-brand-color);
+    background-color: var(--light-colors);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+    color: var(--hero-text-color);
+    background-color: var(--pressed-state-color);
+    border: none;
+}
+
+
