@@ -15,11 +15,40 @@
 }
 
 /* ====================== Body global stylea ====================== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'roboto', sans-serif;
     color: var(--dark-color);
 }
 
+h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul, ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.section {
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+.section-title-center {
+    text-align: center;
+}
 /* ====================== Text Guide ====================== */
 
 /* Global main paramrters for text */
@@ -29,14 +58,29 @@ body {
 }
 
 /* H1 style */
-.title-first {
+.hero-title {
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 56px;
     line-height: 1.15;    
     color: var(--hero-text-color);
+    
+
+    
+    
+    /* background-color: red; */
+}
+
+.fool-title {
+    padding-bottom: 48px;
 }
 
 /* H2 style */
 .title-second {
+    padding-top: 120px;
+    padding-bottom: 72px;
+
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;   
@@ -44,6 +88,8 @@ body {
 
 /* H3 style */
 .title-third {
+    margin-top: 0px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -51,13 +97,15 @@ body {
 
 /* Body text style */
 .small-text {
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
+
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-color);
 }
 
-/* Body text style */
+/* Body text style 2 */
 .medium-text {
     font-weight: 500;
     font-size: 16px;
@@ -87,6 +135,13 @@ body {
 
 /* Hero-button text style */
 .hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 120px; */
+    padding: 16px 32px;
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -131,6 +186,9 @@ body {
 /* ====================== BG section Colors ====================== */
 /* Page header style */
 .bg-color-h-f {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-bottom: 120px;
     background-color: var(--dark-color);
 }
 
@@ -146,35 +204,160 @@ body {
     font-style: normal;
     text-decoration: none;
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 /* ====================== Site Navigation ====================== */
 
+/* .container {
+    width: 1152px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto; 
+} */
+.page-header {
+    background-color: var(--light-colors);
+}
+
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 156px;
+    width: 1440px;
+
+
+
+    background-color: tomato;
+    outline: 1px solid blue;
+}
+
+/* Main mav */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    /* margin-left: 156px; */
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 76px;
+}
+
+.site-nav .item {
+    
+    /* background-color: teal; */
+    
+}
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--dark-color);
+    color: var(--primary-brand-color);
 }
 
 /* A highlighted link to the active page */
 .site-nav .carrent {
-    color: green;
+    color: blue;
+}
+/* ====================== Hero ====================== */
+
+
+
+/* ====================== Section 2 Переваги ====================== */
+
+.invisible {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+.privileges {
+    display: flex;
+    /* margin-bottom: 120px; */
+}
+
+.privileges .item + .item {
+    margin-left: 24px;
+}
+
+/* ====================== Section 3 What are we doing ====================== */
+
+.photo {
+    display: flex;
+}
+
+.photo .item + .item {
+    margin-left: 24px;
+}
+
+/* ====================== Section  Our Team ====================== */
+
+/* .team-cards .item + .item {
+    margin-left: 24px;
+} */
+
 /* ====================== Adress Activation ====================== */
+
+.adress-nav {
+    margin-left: auto;
+    /* margin-right: 156px; */
+    display: flex;
+}
 
 .adress-nav .link:hover,
 .adress-nav .link:focus {
     color: var(--primary-brand-color);
 }
 
+.auth-nav .item {
+    /* background-color: tomato; */
+}
+
+.auth-nav {
+    display: flex;
+}
+
+.auth-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.auth-nav .item + .item {
+    margin-left: 40px;
+}
 /* ====================== Portfolio button menu navigation ====================== */
 
+.btm {
+    display: flex;
+}
+
+.btm .item + .item {
+    margin-left: 24px;
+}
+
 .button-nav {
+    display: inline-block;
+    padding: 12px 24px;
+
+    height: 48px;
     color: var(--primary-brand-color);
     background-color: var(--light-colors);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .button-nav:hover,
