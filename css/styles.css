@@ -219,6 +219,9 @@ button {
 
 /* BG section Our Team */
 .our-team-colors-bg {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 120px;
     background-color: var(--light-colors);
 }
@@ -241,7 +244,9 @@ button {
 }
 
 .page-header {
-    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
     background-color: var(--light-colors);
     /* border-bottom: 1px solid #E7E9FC; */
 }
@@ -255,8 +260,8 @@ button {
     
 
 
-    background-color: tomato;
-    outline: 1px solid blue;
+    background-color: #fff;
+   
 }
 
 /* Main mav */
@@ -293,10 +298,6 @@ button {
 }
 /* ====================== Hero ====================== */
 
-/* .hero {
-    width: 1440px;
-} */
-
 /* ====================== Section 2 Переваги ====================== */
 
 .invisible {
@@ -324,6 +325,20 @@ button {
 }
 
 /* ====================== Section 4 Our Team ====================== */
+.container-t {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 120px;
+    width: 1440px;
+    
+
+
+    background-color: var(--light-colors);
+   
+}
 
 .team-cards {
     display: flex;
@@ -337,6 +352,7 @@ button {
 .card-description {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: #fff;
 }
 
 /* ====================== Footer ====================== */
@@ -396,11 +412,11 @@ button {
     padding-top: 96px;
     padding-bottom: 72px;
     width: 1440px;
+    
+    border-top: 1px solid var(--accent-color);
 
-
-
-    background-color: tomato;
-    outline: 1px solid blue;
+    background-color: #fff;
+    /* outline: 1px solid blue; */
 }
 
 .btm {
@@ -435,20 +451,24 @@ button {
 
 /* ====================== Portfolio cards net ====================== */
 .container-c {
-    width: 1128px;
+    width: 1440px;
     
+    padding-left: 156px;
+    padding-right: 156px;
+
+
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 120px;
    
-    background: #ccc;
+    background-color: #fff;
 }
 
 .card-set {
     display: flex;
     flex-wrap: wrap;
 
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
     padding: 0;
     margin: 0;
     list-style: none;
@@ -460,7 +480,7 @@ button {
 .card-set > .item {
     flex-basis: calc(100% / 3 - 24px);
 
-    outline: 1px solid teal;
+    /* outline: 1px solid teal; */
 }
 
 .card-set-description {
