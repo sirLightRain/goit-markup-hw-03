@@ -74,11 +74,6 @@ button {
     font-size: 56px;
     line-height: 1.15;    
     color: var(--hero-text-color);
-    
-
-    
-    
-    /* background-color: red; */
 }
 
 .fool-title {
@@ -149,9 +144,7 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 120px; */
     padding: 16px 32px;
-
 
     font-weight: 500;
     font-size: 16px;
@@ -238,11 +231,6 @@ button {
 }
 /* ====================== Site Navigation ====================== */
 
-.site-nav .container {
-    /* display: flex; */
-    /* border-bottom: 1px solid #E7E9FC; */
-}
-
 .page-header {
     margin-left: auto;
     margin-right: auto;
@@ -257,19 +245,16 @@ button {
     margin-right: auto;
     padding: 0px 156px;
     width: 1440px;
-    
-
-
-    background-color: #fff;
    
+    background-color: #fff;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 /* Main mav */
 
 .main-nav {
     display: flex;
-    align-items: center;
-    /* border-bottom: 1px solid #E7E9FC; */
+    align-items: center; 
 }
 
 .site-nav {
@@ -299,6 +284,17 @@ button {
 /* ====================== Hero ====================== */
 
 /* ====================== Section 2 Переваги ====================== */
+.container-e {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 156px;
+    width: 1440px;
+   
+    background-color: #fff;
+    
+}
+
 
 .invisible {
     margin-top: 0px;
@@ -315,6 +311,17 @@ button {
 }
 
 /* ====================== Section 3 What are we doing ====================== */
+
+.container-w {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 156px;
+    width: 1440px;
+   
+    background-color: #fff;
+    
+}
 
 .photo {
     display: flex;
@@ -333,11 +340,7 @@ button {
     padding-right: 156px;
     padding-bottom: 120px;
     width: 1440px;
-    
-
-
-    background-color: var(--light-colors);
-   
+    background-color: var(--light-colors);   
 }
 
 .team-cards {
@@ -362,11 +365,6 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-
-
-
-    /* background-color: tomato;
-    outline: 1px solid blue; */
 }
 .logo {
     padding-left: 156px;
@@ -413,10 +411,7 @@ button {
     padding-bottom: 72px;
     width: 1440px;
     
-    border-top: 1px solid var(--accent-color);
-
-    background-color: #fff;
-    /* outline: 1px solid blue; */
+    background-color: #fff; 
 }
 
 .btm {
@@ -468,23 +463,18 @@ button {
     display: flex;
     flex-wrap: wrap;
 
-    /* outline: 1px solid tomato; */
     padding: 0;
     margin: 0;
     list-style: none;
-
     margin-left: -24px;
     margin-top: -48px;
 }
 
 .card-set > .item {
     flex-basis: calc(100% / 3 - 24px);
-
-    /* outline: 1px solid teal; */
 }
 
-.card-set-description {
-    /* display: block; */
+.card-set-description {    
     width: 360px;
     padding-top: 32px;
     padding-bottom: 32px;
