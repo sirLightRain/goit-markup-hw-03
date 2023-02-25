@@ -12,6 +12,7 @@
     --accent-color: #E7E9FC;
     --light-colors: #F4F4FD;
     
+    --space-under-section: 120px;
 }
 
 /* ====================== Body global stylea! ====================== */
@@ -55,9 +56,7 @@ button {
     padding-bottom: 120px;
 }
 
-.section-title-center {
-    text-align: center;
-}
+
 /* ====================== Text Guide ====================== */
 
 /* Global main paramrters for text */
@@ -71,6 +70,7 @@ button {
     
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
     font-size: 56px;
     line-height: 1.15;    
     color: var(--hero-text-color);
@@ -82,7 +82,7 @@ button {
 
 /* H2 style */
 .title-second {
-    
+    text-align: center;
     padding-bottom: 72px;
 
     font-size: 36px;
@@ -127,6 +127,32 @@ button {
 
 }
 
+/* ====================== Universal Container ====================== */
+
+.container-u {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px; 
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    /* justify-content: center; */
+
+    /* background-color: tomato; */
+    /* outline: 1px solid teal; */
+}
+
+.section-u {
+    padding-left: 156px;
+    padding-right: 156px;
+    /* padding-top: 0px; */
+    /* padding-bottom: 120px; */
+}
+
+.h-underline {
+    border-bottom: 1px solid var(--accent-color);
+}
 /* ====================== main page hero button ====================== */
 
 /* Button text style */
@@ -187,13 +213,16 @@ button {
     text-transform: uppercase;
 }
 
-
+.logo-f-size {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 /* ====================== BG section Colors ====================== */
 /* Page header style */
 .bg-color-h {
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    /* width: 1440px; */
     padding-top: 188px;
     padding-bottom: 188px;
     margin-bottom: 120px;
@@ -201,21 +230,21 @@ button {
 }
 
 .bg-color-f {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     width: 1440px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
     
     background-color: var(--dark-color);
 }
 
 /* BG section Our Team */
 .our-team-colors-bg {
-    width: 1440px;
+    /* width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 120px;
+    padding-top: 120px; */
     background-color: var(--light-colors);
 }
 
@@ -231,13 +260,12 @@ button {
 }
 /* ====================== Site Navigation ====================== */
 
-.page-header {
+/* .page-header {
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
     background-color: var(--light-colors);
-    /* border-bottom: 1px solid #E7E9FC; */
-}
+} */
 
 .container {
     display: flex;
@@ -295,7 +323,6 @@ button {
     
 }
 
-
 .invisible {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -303,7 +330,7 @@ button {
 
 .privileges {
     display: flex;
-    /* margin-bottom: 120px; */
+    padding-bottom: var(--space-under-section);
 }
 
 .privileges .item + .item {
@@ -312,7 +339,7 @@ button {
 
 /* ====================== Section 3 What are we doing ====================== */
 
-.container-w {
+/* .container-w {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -321,10 +348,11 @@ button {
    
     background-color: #fff;
     
-}
+} */
 
 .photo {
     display: flex;
+    padding-bottom: var(--space-under-section);
 }
 
 .photo .item + .item {
@@ -332,7 +360,7 @@ button {
 }
 
 /* ====================== Section 4 Our Team ====================== */
-.container-t {
+/* .container-t {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -340,11 +368,13 @@ button {
     padding-right: 156px;
     padding-bottom: 120px;
     width: 1440px;
-    background-color: var(--light-colors);   
-}
+    background-color: var(--light-colors);    
+} */
 
 .team-cards {
+    text-align: center;
     display: flex;
+    padding-bottom: var(--space-under-section);
 }
 
 .team-cards .item + .item {
@@ -360,15 +390,16 @@ button {
 
 /* ====================== Footer ====================== */
 
-.container-f {
+/* .container-f {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-}
-.logo {
+} */
+
+/* .logo {
     padding-left: 156px;
-}
+} */
 
 .logo-footer {
     padding-bottom: 16px;
@@ -379,7 +410,6 @@ button {
 
 .adress-nav {
     margin-left: auto;
-    
     display: flex;
 }
 
@@ -402,16 +432,19 @@ button {
 }
 /* ====================== Portfolio button menu navigation ====================== */
 
-.container-b {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.element-direction {
+    flex-direction: column;
+}
+
+.b-positionong {
+    /* display: flex; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     justify-content: center;
     padding-top: 96px;
     padding-bottom: 72px;
-    width: 1440px;
-    
-    background-color: #fff; 
+    /* width: 1440px; */
+    /* background-color: #fff;  */
 }
 
 .btm {
@@ -463,8 +496,9 @@ button {
     display: flex;
     flex-wrap: wrap;
 
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+        margin: 0; */
+    padding-bottom: var(--space-under-section);
     list-style: none;
     margin-left: -24px;
     margin-top: -48px;
