@@ -123,14 +123,12 @@ button {
 
 /* ====================== Universal Container ====================== */
 
-.container-u {
+.container {
     margin-left: auto;
     margin-right: auto;
     width: 1158px; 
     padding-left: 15px;
     padding-right: 15px;
-
-    display: flex;  
 }
 
 .section-singl-pad {
@@ -248,17 +246,6 @@ button {
 }
 /* ====================== Site Navigation ====================== */
 
-.container {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 156px;
-    width: 1440px;
-   
-    background-color: #fff;
-    border-bottom: 1px solid var(--accent-color);
-}
-
 /* Main mav */
 
 .main-nav {
@@ -293,16 +280,6 @@ button {
 /* ====================== Hero ====================== */
 
 /* ====================== Section 2 Переваги ====================== */
-.container-e {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 156px;
-    width: 1440px;
-   
-    background-color: #fff;
-    
-}
 
 .invisible {
     margin-top: 0px;
@@ -311,6 +288,10 @@ button {
 
 .privileges {
     display: flex;
+}
+
+.privileges > .item {
+    width: 264px;
 }
 
 .privileges .item + .item {
